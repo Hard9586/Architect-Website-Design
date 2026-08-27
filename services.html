@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | HM Architect — Architecture, Interior & Urban Design</title>
+  <meta name="description" content="Explore HM Architect's full range of services: architectural design, interior design, urban planning, landscape design, 3D visualization, and project management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+  <button class="back-to-top"    id="backToTop"       aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">HM</span><span class="logo-text">Architect</span></a>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li><a href="index.html"      class="nav-link"        role="menuitem">Home</a></li>
+        <li><a href="about.html"      class="nav-link"        role="menuitem">About</a></li>
+        <li><a href="services.html"   class="nav-link active" role="menuitem">Services</a></li>
+        <li><a href="projects.html"   class="nav-link"        role="menuitem">Projects</a></li>
+        <li><a href="gallery.html"    class="nav-link"        role="menuitem">Gallery</a></li>
+        <li><a href="index.html#contact" class="nav-link"     role="menuitem">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Get Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" id="services-hero">
+    <div class="page-hero-bg">
+      <img src="images/about_architect.png" alt="" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Services</span>
+        </nav>
+        <h1>What We <em>Build,</em><br />What We Design</h1>
+        <p class="page-hero-sub">Comprehensive, end-to-end architectural and design services — from the first concept sketch to the final key handover. We craft spaces that endure.</p>
+        <div class="page-hero-actions">
+          <a href="#arch-design" class="btn btn-gold">Explore Services <i class="fas fa-arrow-down"></i></a>
+          <a href="index.html#contact" class="btn btn-outline-light">Get Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES QUICK NAV -->
+  <div class="services-nav-wrapper" id="servicesQuickNav">
+    <div class="container">
+      <nav class="services-quick-nav" aria-label="Services navigation">
+        <a href="#arch-design"  class="quick-nav-link active"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+        <a href="#interior"     class="quick-nav-link"><i class="fas fa-couch"></i> Interior Design</a>
+        <a href="#urban"        class="quick-nav-link"><i class="fas fa-city"></i> Urban Planning</a>
+        <a href="#landscape"    class="quick-nav-link"><i class="fas fa-tree"></i> Landscape Design</a>
+        <a href="#visualization"class="quick-nav-link"><i class="fas fa-cube"></i> 3D Visualization</a>
+        <a href="#pm"           class="quick-nav-link"><i class="fas fa-tasks"></i> Project Management</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- SERVICE 1 — ARCHITECTURAL DESIGN -->
+  <section class="service-detail" id="arch-design" style="background:var(--bg);">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-visual" data-aos="fade-right">
+          <img src="images/project_villa.png" alt="Architectural design — modern residential villa" />
+          <div class="service-num-badge">01</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-left">
+          <div class="section-tag">Core Service</div>
+          <h2>Architectural <em>Design</em></h2>
+          <p>Architecture is the art of shaping space to serve life. At HM Architect, we approach every design challenge as an opportunity to create something that raises the human experience — buildings that are not just beautiful, but deeply meaningful, climate-responsive, and technically rigorous.</p>
+          <p>Our architects combine creative vision with structural intelligence, navigating complex building codes, site constraints, and client aspirations to produce designs that stand as benchmarks of their typology. From intimate residences to large-scale mixed-use developments, our process is always rooted in careful listening, deep analysis, and bold design thinking.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Site analysis &amp; feasibility studies</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Concept development &amp; massing</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Schematic and design development</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Construction documentation</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Regulatory approvals &amp; permits</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Construction-phase supervision</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Post-occupancy evaluation</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Adaptive reuse &amp; renovation</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">Luxury Residences</span>
+            <span class="service-tag-chip">Commercial Offices</span>
+            <span class="service-tag-chip">Hotels &amp; Resorts</span>
+            <span class="service-tag-chip">Educational</span>
+            <span class="service-tag-chip">Healthcare</span>
+            <span class="service-tag-chip">Industrial</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Start a Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 2 — INTERIOR DESIGN -->
+  <section class="service-detail" id="interior" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="service-detail-grid" style="direction:rtl;">
+        <div class="service-detail-visual" data-aos="fade-left" style="direction:ltr;">
+          <img src="images/project_interior.png" alt="Interior design — luxury penthouse" />
+          <div class="service-num-badge">02</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-right" style="direction:ltr;">
+          <div class="section-tag">Interiors</div>
+          <h2>Interior <em>Design</em></h2>
+          <p>Great interiors do not merely decorate a space — they transform it into an experience. Our interior design team brings together spatial intelligence, material craftsmanship, and a deep understanding of how people live and move through spaces to create interiors that are at once beautiful, functional, and truly personal.</p>
+          <p>We work across residential, corporate, hospitality, retail, and healthcare typologies, adapting our design vocabulary to suit each client's unique aesthetic and operational needs. From statement lobbies to serene private retreats, every interior we design tells a coherent story through light, material, texture, and furnishing.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Space planning &amp; flow analysis</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Custom furniture design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Material &amp; finish selection</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Lighting design &amp; specification</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Art &amp; décor curation</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Kitchen &amp; wardrobe design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Joinery &amp; millwork design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Fit-out supervision</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">Contemporary</span>
+            <span class="service-tag-chip">Minimalist</span>
+            <span class="service-tag-chip">Art Deco Revival</span>
+            <span class="service-tag-chip">Tropical Modern</span>
+            <span class="service-tag-chip">Industrial Chic</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 3 — URBAN PLANNING -->
+  <section class="service-detail" id="urban" style="background:var(--bg);">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-visual" data-aos="fade-right">
+          <img src="images/project_urban.png" alt="Urban planning — city development" />
+          <div class="service-num-badge">03</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-left">
+          <div class="section-tag">Urban Scale</div>
+          <h2>Urban <em>Planning</em></h2>
+          <p>Cities are living organisms — constantly growing, adapting, and evolving. At HM Architect, our urban planning practice works at the intersection of community needs, infrastructure realities, environmental imperatives, and economic viability to shape urban futures that are equitable, vibrant, and resilient.</p>
+          <p>Our urban designers bring a holistic, people-centred approach to every planning challenge — whether master-planning entire townships, revitalizing urban cores, or designing mixed-use precincts that knit communities together. We believe cities should be designed for people first, vehicles second.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Township master planning</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Mixed-use precinct design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Urban renewal strategies</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Land-use &amp; zoning plans</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Mobility &amp; transport planning</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Environmental impact assessment</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Infrastructure planning</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Smart city integration</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">Township Planning</span>
+            <span class="service-tag-chip">Mixed-Use</span>
+            <span class="service-tag-chip">Urban Renewal</span>
+            <span class="service-tag-chip">Smart Cities</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Discuss Your Vision <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 4 — LANDSCAPE -->
+  <section class="service-detail" id="landscape" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="service-detail-grid" style="direction:rtl;">
+        <div class="service-detail-visual" data-aos="fade-left" style="direction:ltr;">
+          <img src="images/project_landscape.png" alt="Landscape design" />
+          <div class="service-num-badge">04</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-right" style="direction:ltr;">
+          <div class="section-tag">Outdoor Environments</div>
+          <h2>Landscape <em>Design</em></h2>
+          <p>The line between indoors and outdoors dissolves in the best architecture — and our landscape design practice exists to nurture that dissolution. We create outdoor environments that are not merely ornamental but are integral to the architectural narrative: spaces for contemplation, play, gathering, and connection with the natural world.</p>
+          <p>Our landscape architects combine horticultural expertise with spatial design skill to create environments that mature gracefully over time, support biodiversity, manage stormwater sustainably, and provide measurable wellbeing benefits to the people who inhabit them.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Residential garden design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Public park &amp; plaza design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Corporate campus landscapes</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Rooftop &amp; terrace gardens</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Water feature design</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Sustainable stormwater systems</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Hardscaping &amp; paving</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Planting design &amp; specification</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">Residential Gardens</span>
+            <span class="service-tag-chip">Public Spaces</span>
+            <span class="service-tag-chip">Waterfront</span>
+            <span class="service-tag-chip">Biophilic Design</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Get Landscape Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 5 — 3D VISUALIZATION -->
+  <section class="service-detail" id="visualization" style="background:var(--bg);">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-visual" data-aos="fade-right">
+          <img src="images/concept_render.png" alt="3D visualization — architectural render" />
+          <div class="service-num-badge">05</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-left">
+          <div class="section-tag">Digital Design</div>
+          <h2>3D <em>Visualization</em></h2>
+          <p>Seeing is believing — and in architecture, believing drives decisive, confident investment decisions. Our visualization studio produces photorealistic imagery and immersive digital experiences that bring your project to life before a single brick is laid, enabling you to refine design intent, communicate with stakeholders, and market to buyers with absolute confidence.</p>
+          <p>From still renders to fully animated fly-throughs and interactive VR walkthroughs, our visualization team employs the industry's most advanced tools and techniques to produce imagery of extraordinary clarity and emotional impact. Every render tells the full story of light, material, proportion, and atmosphere.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Photorealistic still renders</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> 360° panoramic views</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Virtual reality walkthroughs</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Animated fly-through videos</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Drone-perspective renders</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Interior mood visualizations</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Day-to-night lighting studies</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Marketing &amp; sales material</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">3ds Max + V-Ray</span>
+            <span class="service-tag-chip">Lumion</span>
+            <span class="service-tag-chip">Enscape</span>
+            <span class="service-tag-chip">Blender</span>
+            <span class="service-tag-chip">Unreal Engine</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Request Sample Render <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 6 — PROJECT MANAGEMENT -->
+  <section class="service-detail" id="pm" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="service-detail-grid" style="direction:rtl;">
+        <div class="service-detail-visual" data-aos="fade-left" style="direction:ltr;">
+          <img src="images/construction_site.png" alt="Project management — construction site" />
+          <div class="service-num-badge">06</div>
+        </div>
+        <div class="service-detail-content" data-aos="fade-right" style="direction:ltr;">
+          <div class="section-tag">Construction Phase</div>
+          <h2>Project <em>Management</em></h2>
+          <p>From breaking ground to handing over the keys, our project management service ensures that every element of your build is executed with precision, within budget, and on schedule. Our project managers bring rigorous systems thinking and deep construction industry knowledge to bear on even the most complex builds.</p>
+          <p>We act as your independent representative on site — liaising between contractors, structural engineers, MEP consultants, and specialist suppliers to maintain design intent, manage risk, and ensure that the quality of what gets built matches the quality of what was designed. Your investment is protected at every stage.</p>
+          <ul class="service-offer-list">
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Contractor procurement &amp; tendering</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Contract administration</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Programme &amp; schedule management</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Cost control &amp; reporting</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Quality assurance &amp; snagging</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> BIM coordination</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Health &amp; safety oversight</li>
+            <li class="service-offer-item"><i class="fas fa-check-circle"></i> Handover &amp; O&amp;M documentation</li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag-chip">Autodesk BIM 360</span>
+            <span class="service-tag-chip">MS Project</span>
+            <span class="service-tag-chip">Primavera P6</span>
+            <span class="service-tag-chip">PMP Certified PMs</span>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:2rem;">Discuss Your Build <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS & TECHNOLOGY -->
+  <section class="tools-section section" id="tools">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Built on the Best Tools</div>
+        <h2 class="section-title">Technology &amp; <em>Software</em></h2>
+        <p class="section-subtitle">We invest in industry-leading design, visualization, and collaboration tools to deliver work that is precise, efficient, and extraordinary</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card" data-aos="fade-up" data-delay="0">
+          <div class="tool-icon">📐</div>
+          <div class="tool-name">AutoCAD</div>
+          <div class="tool-type">2D Drafting</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="80">
+          <div class="tool-icon">🏗️</div>
+          <div class="tool-name">Autodesk Revit</div>
+          <div class="tool-type">BIM Design</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="160">
+          <div class="tool-icon">📦</div>
+          <div class="tool-name">SketchUp Pro</div>
+          <div class="tool-type">3D Modeling</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="240">
+          <div class="tool-icon">🎬</div>
+          <div class="tool-name">3ds Max + V-Ray</div>
+          <div class="tool-type">Photorealistic Renders</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="320">
+          <div class="tool-icon">🌿</div>
+          <div class="tool-name">Lumion 12</div>
+          <div class="tool-type">Real-time Rendering</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="0">
+          <div class="tool-icon">🔮</div>
+          <div class="tool-name">Rhinoceros 3D</div>
+          <div class="tool-type">Parametric Design</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="80">
+          <div class="tool-icon">🎯</div>
+          <div class="tool-name">ArchiCAD</div>
+          <div class="tool-type">BIM Documentation</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="160">
+          <div class="tool-icon">🌐</div>
+          <div class="tool-name">Enscape</div>
+          <div class="tool-type">VR Walkthroughs</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="240">
+          <div class="tool-icon">🎮</div>
+          <div class="tool-name">Unreal Engine</div>
+          <div class="tool-type">Interactive Visualization</div>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-delay="320">
+          <div class="tool-icon">☀️</div>
+          <div class="tool-name">Energy Plus</div>
+          <div class="tool-type">Sustainable Analysis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section section" id="pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Transparent Pricing</div>
+        <h2 class="section-title">Service <em>Packages</em></h2>
+        <p class="section-subtitle">Flexible engagement models to suit every budget and project scope. All packages include a complimentary initial consultation.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up" data-delay="0">
+          <div class="pricing-tier">Essential</div>
+          <div class="pricing-title">Concept &amp; Vision</div>
+          <div class="pricing-desc">Ideal for clients seeking design direction and concept validation before committing to full development.</div>
+          <hr class="pricing-divider" />
+          <div class="pricing-features">
+            <div class="pf-item"><i class="fas fa-check"></i> Initial consultation &amp; brief</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Site analysis report</div>
+            <div class="pf-item"><i class="fas fa-check"></i> 2 concept design options</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Schematic drawings</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Basic 3D massing model</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Preliminary cost estimate</div>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary btn-full">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="pricing-card featured" data-aos="fade-up" data-delay="100">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-title">Full Design Service</div>
+          <div class="pricing-desc">Complete design development and documentation package — the choice of most of our residential and commercial clients.</div>
+          <hr class="pricing-divider" />
+          <div class="pricing-features">
+            <div class="pf-item"><i class="fas fa-check"></i> Everything in Essential</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Full design development</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Construction documents</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Regulatory submission support</div>
+            <div class="pf-item"><i class="fas fa-check"></i> 3D visualizations (5 views)</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Interior design &amp; FF&amp;E</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Contractor tender support</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Fortnightly design reviews</div>
+          </div>
+          <a href="index.html#contact" class="btn btn-gold btn-full">Most Recommended <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="pricing-card" data-aos="fade-up" data-delay="200">
+          <div class="pricing-tier">Premium</div>
+          <div class="pricing-title">Full-Service Delivery</div>
+          <div class="pricing-desc">End-to-end engagement from first brief through post-completion aftercare — the ultimate peace-of-mind package.</div>
+          <hr class="pricing-divider" />
+          <div class="pricing-features">
+            <div class="pf-item"><i class="fas fa-check"></i> Everything in Professional</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Unlimited visualizations</div>
+            <div class="pf-item"><i class="fas fa-check"></i> VR walkthrough experience</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Full site supervision</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Dedicated project manager</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Weekly client progress reports</div>
+            <div class="pf-item"><i class="fas fa-check"></i> Landscape &amp; lighting design</div>
+            <div class="pf-item"><i class="fas fa-check"></i> 12-month post-occupancy care</div>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary btn-full">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section" id="faq">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Common Questions</div>
+        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+        <p class="section-subtitle">Honest, straightforward answers to the questions we hear most often from prospective clients</p>
+      </div>
+      <div class="faq-list" data-aos="fade-up">
+        <div class="faq-item">
+          <div class="faq-question">How long does a typical architectural design project take?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Timeline varies significantly by project type and scope. A luxury residence typically takes 6–8 months for design and documentation, followed by 12–18 months of construction. A mid-size commercial project may require 10–14 months of design and 18–30 months to build. We provide a detailed, realistic programme at the outset of every project and manage to it rigorously.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is your fee structure and how is it calculated?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Our fees are typically calculated as a percentage of the estimated construction cost, ranging from 4–12% depending on project complexity, typology, and the scope of services engaged. For some project types we offer fixed-fee or hourly arrangements. We always discuss and agree fees transparently before commencing any work. Contact us for a tailored fee proposal.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you work on projects outside Ahmedabad and Gujarat?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Absolutely. HM Architect currently has active projects across Gujarat, Maharashtra, Karnataka, Goa, Delhi NCR, and Rajasthan. We also have an active international project in Dubai through our partnership with ZA Studio. We are fully equipped to manage remote projects through video consultations, site visits, and on-ground project management coordinators.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can you help with building permits, approvals, and regulatory submissions?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Yes. Navigating the approval process is an integral part of our comprehensive design service. Our team prepares all necessary drawings and documentation for statutory submissions to municipal corporations, development authorities, and environmental clearance bodies. We maintain strong working relationships with local authorities in all the cities where we regularly practise.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you provide 3D visualizations for all projects?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Photorealistic 3D visualizations are included in our Professional and Premium service packages and can be added to the Essential package. We believe strongly that clients deserve to see — and fall in love with — their project before construction begins. Our renders are of the highest commercial quality and have been used for award submissions, marketing campaigns, and client presentations.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is the minimum project size or budget you accept?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">We do not publish a minimum project size, as our engagement depends more on project complexity and alignment with our studio's strengths than on size alone. We have worked on intimate residential interventions of ₹1 crore and large mixed-use developments exceeding ₹500 crore. Contact us with your brief and we will let you know honestly whether we are the right fit.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How does HM Architect approach sustainable and green design?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Sustainability is not an add-on at HM Architect — it is embedded in our design DNA. Every project is oriented and massed for optimum solar and wind performance, with passive design strategies explored before any mechanical system is specified. Our sustainability team includes LEED APs and GRIHA evaluators. We have helped clients achieve IGBC Green Building certifications across multiple project typologies.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you also manage the construction process or only the design?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">We offer both. Most clients engage us for full design services including construction-phase supervision, where our architects make regular site visits to verify quality, resolve on-site design queries, and certify contractor claims. For clients who want even more hands-on management, our Project Management service provides a dedicated PM who is essentially your representative on site full-time throughout the build.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How many projects does HM Architect work on simultaneously?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Our studio actively manages between 12–18 projects at any given time across design and construction stages. Our structured team model ensures that every project has a dedicated design architect, project architect, and project manager reporting to a director — so your project always receives the focused attention it deserves, regardless of how many others are in the studio.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What happens if I change my mind mid-design?<div class="faq-icon"><i class="fas fa-plus"></i></div></div>
+          <div class="faq-body"><div class="faq-body-inner">Design is an iterative, collaborative process and we fully expect refinements along the way. Our design stages are structured to capture and incorporate your feedback at each gateway before proceeding. Significant changes of scope after a stage has been completed may incur an additional fee, which we always discuss openly before proceeding — there are never any surprises in our billing.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg"><img src="images/project_office.png" alt="" /><div class="cta-overlay"></div></div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="section-tag light">Let's Talk</div>
+        <h2>Ready to Start Your<br /><em>Next Project?</em></h2>
+        <p>Every great building starts with a conversation. Book your complimentary 60-minute consultation today.</p>
+        <a href="index.html#contact" class="btn btn-gold btn-lg">Book Free Consultation <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main"><div class="container"><div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">HM</span><span class="logo-text">Architect</span></a>
+        <p>Creating timeless spaces that inspire, innovate, and endure. Architecture that stands for generations.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="index.html#contact">Contact</a></li>
+      </ul></div>
+      <div class="footer-links"><h4>Services</h4><ul>
+        <li><a href="#arch-design">Architectural Design</a></li>
+        <li><a href="#interior">Interior Design</a></li>
+        <li><a href="#urban">Urban Planning</a></li>
+        <li><a href="#landscape">Landscape Design</a></li>
+        <li><a href="#visualization">3D Visualization</a></li>
+        <li><a href="#pm">Project Management</a></li>
+      </ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>HM Architect Studio, Satellite Road,<br>Ahmedabad, Gujarat 380015, India</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919876543210">+91 98765 43210</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:hello@hmarchitect.com">hello@hmarchitect.com</a></span></div>
+      </div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container">
+      <p>&copy; <span id="currentYear">2025</span> HM Architect. All Rights Reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

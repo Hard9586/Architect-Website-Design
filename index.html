@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HM Architect | Designing Spaces That Inspire</title>
+  <meta name="description" content="HM Architect is a leading architecture and design studio in Ahmedabad specializing in residential, commercial, and luxury projects. Innovation meets sustainability." />
+  <meta name="keywords" content="HM Architect, architecture firm, Ahmedabad, residential design, commercial design, interior design, luxury architecture" />
+  <meta name="author" content="HM Architect" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HM Architect | Designing Spaces That Inspire" />
+  <meta property="og:description" content="Premium architectural solutions for modern living — residential, commercial & luxury projects." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== DARK MODE TOGGLE ===== -->
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" title="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="HM Architect Home">
+        <span class="logo-icon" aria-hidden="true">HM</span>
+        <span class="logo-text">Architect</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#home"            class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html"       class="nav-link"        role="menuitem">About</a></li>
+        <li role="none"><a href="services.html"    class="nav-link"        role="menuitem">Services</a></li>
+        <li role="none"><a href="projects.html"    class="nav-link"        role="menuitem">Projects</a></li>
+        <li role="none"><a href="gallery.html"     class="nav-link"        role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#contact"         class="nav-link"        role="menuitem">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta" id="navCTA">Get Consultation</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-background" aria-hidden="true">
+      <img src="images/hero_architecture.png" alt="" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-map-marker-alt"></i> Est. 2014 &mdash; Ahmedabad, India
+      </div>
+      <h1 class="hero-title">
+        Designing Spaces<br /><em>That Inspire</em>
+      </h1>
+      <p class="hero-subtitle">Innovative architectural solutions for modern living and timeless design</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-gold" id="heroViewProjects">
+          View Projects <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline-light" id="heroContact">
+          Contact Us
+        </a>
+      </div>
+
+      <div class="hero-stats" aria-label="Key statistics">
+        <div class="hero-stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Design Awards</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about" aria-label="About">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper" data-aos="fade-right">
+          <img src="images/about_architect.png" alt="HM Architect Studio — Our expert team at work" class="about-img" />
+          <div class="about-badge" aria-hidden="true">
+            <span class="badge-number">10+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">Architecture<br /><em>Meets Innovation</em></h2>
+          <p class="about-description">
+            HM Architect is a leading architecture and design studio specializing in residential, commercial, and luxury projects with a focus on innovation and sustainability.
+          </p>
+          <p class="about-text">
+            Founded in 2014 in Ahmedabad, Gujarat, we have been transforming spaces and shaping skylines with our distinctive blend of creative design, engineering excellence, and environmental responsibility. Every project we undertake is a bold statement of purpose.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-leaf"></i>
+              <span>Sustainable Design</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-drafting-compass"></i>
+              <span>Precision Engineering</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-award"></i>
+              <span>Award-Winning Studio</span>
+            </div>
+          </div>
+
+          <div class="about-stats" aria-label="Company statistics">
+            <div class="stat-item">
+              <div>
+                <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <div>
+                <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <div>
+                <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" id="aboutWorkWithUs">
+            Work With Us <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Our Expertise</div>
+        <h2 class="section-title">What We <em>Create</em></h2>
+        <p class="section-subtitle">End-to-end architectural and design services tailored to your unique vision</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-delay="0">
+          <div class="service-icon-wrapper"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Architectural Design</h3>
+          <p>From concept sketches to final blueprints, we craft spaces that harmonize functionality with beauty — creating lasting architectural statements.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="100">
+          <div class="service-icon-wrapper"><i class="fas fa-couch"></i></div>
+          <h3>Interior Design</h3>
+          <p>Curated interiors that reflect your personality — blending aesthetics with ergonomics to craft living and working spaces you'll love.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="200">
+          <div class="service-icon-wrapper"><i class="fas fa-city"></i></div>
+          <h3>Urban Planning</h3>
+          <p>Strategic urban design solutions that create vibrant, sustainable communities and reshape city landscapes for future generations.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="300">
+          <div class="service-icon-wrapper"><i class="fas fa-tree"></i></div>
+          <h3>Landscape Design</h3>
+          <p>Creating outdoor environments that breathe life into architecture — integrating nature with built form in perfect harmony.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="400">
+          <div class="service-icon-wrapper"><i class="fas fa-cube"></i></div>
+          <h3>3D Visualization</h3>
+          <p>Photorealistic 3D renders and immersive virtual walkthroughs that bring your project to life before a single brick is laid.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="500">
+          <div class="service-icon-wrapper"><i class="fas fa-tasks"></i></div>
+          <h3>Project Management</h3>
+          <p>Comprehensive construction oversight ensuring every detail is executed with precision — on time, within budget, beyond expectations.</p>
+          <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects" aria-label="Projects portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+        <p class="section-subtitle">A showcase of our most celebrated architectural achievements across India</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all"         id="filterAll">All</button>
+        <button class="filter-btn"        data-filter="residential" id="filterResidential">Residential</button>
+        <button class="filter-btn"        data-filter="commercial"  id="filterCommercial">Commercial</button>
+        <button class="filter-btn"        data-filter="interior"    id="filterInterior">Interior</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-category="residential">
+          <div class="project-image">
+            <img src="images/project_villa.png" alt="Skyline Villa — Modern Residential Project" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Residential</span>
+              <h3>Skyline Villa</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Skyline Villa"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="commercial">
+          <div class="project-image">
+            <img src="images/project_office.png" alt="Apex Corporate Tower — Commercial Project" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Commercial</span>
+              <h3>Apex Corporate Tower</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Apex Tower"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="interior">
+          <div class="project-image">
+            <img src="images/project_interior.png" alt="Zenith Penthouse — Luxury Interior" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Interior</span>
+              <h3>Zenith Penthouse</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Zenith Penthouse"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="residential">
+          <div class="project-image">
+            <img src="images/project_landscape.png" alt="Harmony Gardens — Landscape Design" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Residential</span>
+              <h3>Harmony Gardens</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Surat, Gujarat</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Harmony Gardens"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="commercial">
+          <div class="project-image">
+            <img src="images/project_urban.png" alt="Urban Hub Complex — Commercial Development" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Commercial</span>
+              <h3>Urban Hub Complex</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Urban Hub"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="interior">
+          <div class="project-image">
+            <img src="images/about_architect.png" alt="Luminary Art Gallery — Interior Design" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-category">Interior</span>
+              <h3>Luminary Art Gallery</h3>
+              <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+              <a href="#contact" class="project-link" aria-label="Learn more about Luminary Gallery"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery section" id="gallery" aria-label="Photo gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Gallery</div>
+        <h2 class="section-title">Visual <em>Stories</em></h2>
+        <p class="section-subtitle">A curated collection of our finest architectural photography</p>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid" role="list">
+      <div class="gallery-item" data-src="images/hero_architecture.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 1">
+        <img src="images/hero_architecture.png" alt="Modern architecture exterior — golden hour" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/project_villa.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 2">
+        <img src="images/project_villa.png" alt="Luxury residential villa with infinity pool" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/project_office.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 3">
+        <img src="images/project_office.png" alt="Modern glass commercial tower" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/project_interior.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 4">
+        <img src="images/project_interior.png" alt="Luxury penthouse interior design" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/project_landscape.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 5">
+        <img src="images/project_landscape.png" alt="Modern landscape garden design" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/project_urban.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 6">
+        <img src="images/project_urban.png" alt="Urban development complex" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/about_architect.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 7">
+        <img src="images/about_architect.png" alt="Architecture studio at work" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/hero_architecture.png" role="listitem" tabindex="0" aria-label="Architecture gallery image 8">
+        <img src="images/hero_architecture.png" alt="Dramatic architectural facade" loading="lazy" />
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+      <button class="lightbox-btn lightbox-prev"  id="lightboxPrev"  aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-btn lightbox-next"  id="lightboxNext"  aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-content">
+        <img src="" alt="Gallery Image" id="lightboxImg" />
+      </div>
+      <div class="lightbox-counter" id="lightboxCounter" aria-live="polite">1 / 8</div>
+    </div>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials section" id="testimonials" aria-label="Client testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Client Reviews</div>
+        <h2 class="section-title">What Clients <em>Say</em></h2>
+        <p class="section-subtitle">Real stories from the people we have had the privilege of working with</p>
+      </div>
+
+      <div class="testimonials-slider" aria-label="Testimonials carousel">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <div class="stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"HM Architect transformed our vision into a masterpiece. Their attention to detail and innovative approach exceeded all our expectations. The space they created is truly extraordinary — we receive compliments daily!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">RK</div>
+                <div class="author-info">
+                  <h4>Rajesh Kumar</h4>
+                  <span>Luxury Villa Owner, Ahmedabad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <div class="stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Working with HM Architect on our corporate headquarters was an exceptional experience. They delivered a world-class design that perfectly represents our brand identity. The project was delivered on time and within budget."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">PM</div>
+                <div class="author-info">
+                  <h4>Priya Mehta</h4>
+                  <span>CEO, TechVision Corp, Mumbai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <div class="stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"The team's sustainable design approach and deep understanding of our needs resulted in a beautiful, eco-friendly home we are truly proud of. HM Architect is simply the best in the business — we couldn't be happier!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">AS</div>
+                <div class="author-info">
+                  <h4>Ananya Shah</h4>
+                  <span>Homeowner, Surat, Gujarat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <div class="stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Our commercial complex was a complex challenge, but HM Architect handled every detail with grace and professionalism. The final result is a landmark building that has become the talk of the city. Absolutely brilliant!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">VN</div>
+                <div class="author-info">
+                  <h4>Vikram Nair</h4>
+                  <span>Real Estate Developer, Pune</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testimonial-btn" id="testimPrev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots" id="testimDots" role="tablist" aria-label="Testimonial navigation">
+            <span class="dot active" data-index="0" role="tab" aria-selected="true"  aria-label="Testimonial 1"></span>
+            <span class="dot"        data-index="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></span>
+            <span class="dot"        data-index="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></span>
+            <span class="dot"        data-index="3" role="tab" aria-selected="false" aria-label="Testimonial 4"></span>
+          </div>
+          <button class="testimonial-btn" id="testimNext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section" id="why-us" aria-label="Why choose HM Architect">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-us-content" data-aos="fade-right">
+          <div class="section-tag">Why HM Architect</div>
+          <h2 class="section-title">The HM <em>Difference</em></h2>
+          <p class="why-us-intro">We combine artistic vision with technical precision to deliver architectural solutions that stand the test of time and transcend the ordinary.</p>
+
+          <div class="why-us-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="feature-text">
+                <h4>Creative Design Approach</h4>
+                <p>Every project begins with a unique concept rooted in your specific vision, context, and lifestyle needs.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-clock"></i></div>
+              <div class="feature-text">
+                <h4>Timely Delivery</h4>
+                <p>We respect your time. Our structured project management ensures every milestone is met on schedule.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+              <div class="feature-text">
+                <h4>Sustainable Solutions</h4>
+                <p>Eco-conscious designs that reduce environmental impact while maximizing beauty and functional efficiency.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+              <div class="feature-text">
+                <h4>Client-Centric Process</h4>
+                <p>Your vision is the heart of everything. We listen deeply, collaborate openly, and deliver beyond expectations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-us-visual" data-aos="fade-left">
+          <img src="images/project_interior.png" alt="Our premium design work and process" />
+          <div class="why-us-highlight">
+            <i class="fas fa-trophy" aria-hidden="true"></i>
+            <div>
+              <span class="highlight-num">15+</span>
+              <span class="highlight-label">Design Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section" aria-label="Call to action">
+    <div class="cta-bg" aria-hidden="true">
+      <img src="images/hero_architecture.png" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="section-tag light">Start Your Journey</div>
+        <h2>Ready to Build Your<br /><em>Dream Space?</em></h2>
+        <p>Let's collaborate to create something extraordinary. Your vision, our expertise, your legacy.</p>
+        <a href="#contact" class="btn btn-gold btn-lg" id="ctaConsultation">
+          Get Free Consultation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact" aria-label="Contact us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Start Your <em>Project</em></h2>
+        <p class="section-subtitle">Share your vision with us — we will bring it to life with passion and precision</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let&apos;s Build Together</h3>
+          <p>Whether you have a complete vision or a rough idea, we are here to help transform your dreams into architectural reality — one space at a time.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+              <div>
+                <h4>Our Office</h4>
+                <p>HM Architect Studio, Satellite Road,<br />Ahmedabad, Gujarat 380015, India</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@hmarchitect.com">hello@hmarchitect.com</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday &ndash; Saturday: 9:00 AM &ndash; 7:00 PM IST</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Instagram" title="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"  title="Connect on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"  title="Like on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"   title="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+                <span class="field-error" id="nameError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                <span class="field-error" id="emailError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="architectural">Architectural Design</option>
+                  <option value="interior">Interior Design</option>
+                  <option value="urban">Urban Planning</option>
+                  <option value="landscape">Landscape Design</option>
+                  <option value="3d">3D Visualization</option>
+                  <option value="management">Project Management</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Your Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your project — size, location, style preferences, timeline..." rows="5" required></textarea>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div class="success-message" id="successMessage" role="status" aria-live="polite">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out to HM Architect. Our team will get back to you within 24 business hours.</p>
+            <button class="btn btn-primary" id="sendAnotherBtn" style="margin-top:1.5rem;">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION SECTION ===== -->
+  <section class="location-section" id="location" aria-label="Our location">
+    <div class="container">
+      <div class="section-header" style="padding-top:5rem;" data-aos="fade-up">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Our <em>Location</em></h2>
+        <p class="section-subtitle">Visit our studio in the heart of Ahmedabad, Gujarat</p>
+      </div>
+    </div>
+
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.29047462785!2d72.41494444370908!3d23.020521944380975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        width="100%"
+        height="480"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="HM Architect Location — Ahmedabad, Gujarat, India">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer" aria-label="Footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="#home" class="logo" aria-label="HM Architect Home">
+              <span class="logo-icon" aria-hidden="true">HM</span>
+              <span class="logo-text">Architect</span>
+            </a>
+            <p>Creating timeless spaces that inspire, innovate, and endure. Architecture is not just about buildings — it is about crafting experiences that last a lifetime.</p>
+            <div class="footer-social" aria-label="Social media">
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#services">Architectural Design</a></li>
+              <li><a href="#services">Interior Design</a></li>
+              <li><a href="#services">Urban Planning</a></li>
+              <li><a href="#services">Landscape Design</a></li>
+              <li><a href="#services">3D Visualization</a></li>
+              <li><a href="#services">Project Management</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <address>
+              <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>HM Architect Studio, Satellite Road,<br />Ahmedabad, Gujarat 380015, India</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span><a href="mailto:hello@hmarchitect.com">hello@hmarchitect.com</a></span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-clock" aria-hidden="true"></i>
+                <span>Mon &ndash; Sat: 9:00 AM &ndash; 7:00 PM</span>
+              </div>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear">2025</span> HM Architect. All Rights Reserved. Crafted with <i class="fas fa-heart" aria-hidden="true"></i> in Ahmedabad.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

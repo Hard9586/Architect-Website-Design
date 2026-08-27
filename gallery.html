@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | HM Architect — Our Visual Portfolio</title>
+  <meta name="description" content="Browse HM Architect's stunning visual gallery of architectural photography, 3D renders, interior shots, landscape images, and before-after project transformations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Lightbox -->
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <div class="lightbox-content"><img src="" alt="" id="lightboxImg" /></div>
+    <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <button class="lightbox-btn lightbox-prev"  id="lightboxPrev"  aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-btn lightbox-next"  id="lightboxNext"  aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">HM</span><span class="logo-text">Architect</span></a>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li><a href="index.html"         class="nav-link"        role="menuitem">Home</a></li>
+        <li><a href="about.html"         class="nav-link"        role="menuitem">About</a></li>
+        <li><a href="services.html"      class="nav-link"        role="menuitem">Services</a></li>
+        <li><a href="projects.html"      class="nav-link"        role="menuitem">Projects</a></li>
+        <li><a href="gallery.html"       class="nav-link active" role="menuitem">Gallery</a></li>
+        <li><a href="index.html#contact" class="nav-link"        role="menuitem">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Get Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" id="gallery-hero">
+    <div class="page-hero-bg">
+      <img src="images/about_hero_bg.png" alt="" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Gallery</span>
+        </nav>
+        <h1>A Visual Journey<br />Through Our <em>Work</em></h1>
+        <p class="page-hero-sub">Every image is a chapter in an architectural story. Browse 200+ projects through striking photography, photorealistic renders, and detailed interior studies.</p>
+        <div class="page-hero-actions">
+          <a href="#masonry-gallery" class="btn btn-gold">Explore Gallery <i class="fas fa-arrow-down"></i></a>
+          <a href="index.html#contact" class="btn btn-outline-light">Commission a Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-hero-scroll"><div class="page-hero-scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- GALLERY STATS BAR -->
+  <div class="gallery-stats-bar" id="gstats">
+    <div class="container">
+      <div class="gstats-grid">
+        <div class="gstat-item">
+          <span class="num" data-target="200">0</span><span class="num">+</span>
+          <span class="label">Projects Photographed</span>
+        </div>
+        <div class="gstat-item">
+          <span class="num" data-target="450">0</span><span class="num">+</span>
+          <span class="label">Photorealistic Renders</span>
+        </div>
+        <div class="gstat-item">
+          <span class="num" data-target="30">0</span><span class="num">+</span>
+          <span class="label">Media Publications</span>
+        </div>
+        <div class="gstat-item">
+          <span class="num" data-target="15">0</span><span class="num">+</span>
+          <span class="label">Awards Received</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASONRY GALLERY -->
+  <section class="section" id="masonry-gallery" style="background:var(--bg); padding-bottom:0;">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Our Visual Portfolio</div>
+        <h2 class="section-title">Curated <em>Imagery</em></h2>
+        <p class="section-subtitle">Explore our complete body of work filtered by typology — exterior architecture, interior design, urban photography, landscape, and digital renders</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="gallery-page-filter" data-aos="fade-up">
+        <button class="gf-btn active" data-gfilter="all">All Work</button>
+        <button class="gf-btn" data-gfilter="exterior">Exterior</button>
+        <button class="gf-btn" data-gfilter="interior">Interior</button>
+        <button class="gf-btn" data-gfilter="urban">Urban</button>
+        <button class="gf-btn" data-gfilter="landscape">Landscape</button>
+        <button class="gf-btn" data-gfilter="render">3D Renders</button>
+      </div>
+    </div>
+
+    <div class="gallery-masonry" id="masonryGrid">
+      <div class="masonry-item" data-gcat="exterior" data-src="images/project_villa.png" tabindex="0" role="button" aria-label="Open image: Skyline Villa Exterior">
+        <img src="images/project_villa.png" alt="Skyline Villa — exterior" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Skyline Villa</div>
+          <div class="masonry-cat">Exterior · Residential</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="interior" data-src="images/project_interior.png" tabindex="0" role="button" aria-label="Open image: NexGen HQ Interior">
+        <img src="images/project_interior.png" alt="NexGen HQ interior" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">NexGen Corporate HQ</div>
+          <div class="masonry-cat">Interior · Commercial</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="urban" data-src="images/project_urban.png" tabindex="0" role="button" aria-label="Open image: Surat River Front">
+        <img src="images/project_urban.png" alt="Surat River Front Promenade" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Surat River Front</div>
+          <div class="masonry-cat">Urban · Public Space</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="landscape" data-src="images/project_landscape.png" tabindex="0" role="button" aria-label="Open image: Coastal Resort Landscapes">
+        <img src="images/project_landscape.png" alt="Coastal Resort landscape" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Coastal Resort Gardens</div>
+          <div class="masonry-cat">Landscape · Resort</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="render" data-src="images/concept_render.png" tabindex="0" role="button" aria-label="Open image: Vertical Forest Towers Render">
+        <img src="images/concept_render.png" alt="Vertical Forest Towers render" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Vertical Forest Towers</div>
+          <div class="masonry-cat">3D Render · Concept</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="exterior" data-src="images/project_office.png" tabindex="0" role="button" aria-label="Open image: Central Business Tower">
+        <img src="images/project_office.png" alt="Central Business Tower exterior" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Central Business Tower</div>
+          <div class="masonry-cat">Exterior · Commercial</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="exterior" data-src="images/about_hero_bg.png" tabindex="0" role="button" aria-label="Open image: Aerial City View">
+        <img src="images/about_hero_bg.png" alt="Aerial city view" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Ahmedabad Skyline</div>
+          <div class="masonry-cat">Urban · Aerial</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="interior" data-src="images/about_architect.png" tabindex="0" role="button" aria-label="Open image: Studio Workspace">
+        <img src="images/about_architect.png" alt="Architectural studio workspace" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Our Design Studio</div>
+          <div class="masonry-cat">Interior · Studio</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="urban" data-src="images/construction_site.png" tabindex="0" role="button" aria-label="Open image: Construction Site">
+        <img src="images/construction_site.png" alt="Building under construction" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">TechSphere Tower — Construction</div>
+          <div class="masonry-cat">Urban · Construction</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="landscape" data-src="images/project_villa.png" tabindex="0" role="button" aria-label="Open image: Villa Garden">
+        <img src="images/project_villa.png" alt="Skyline Villa garden" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Skyline Villa — Pool Garden</div>
+          <div class="masonry-cat">Landscape · Residential</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="render" data-src="images/project_office.png" tabindex="0" role="button" aria-label="Open image: Business Park Render">
+        <img src="images/project_office.png" alt="Business park architectural render" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Smart City Hub — Render</div>
+          <div class="masonry-cat">3D Render · Commercial</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="interior" data-src="images/project_interior.png" tabindex="0" role="button" aria-label="Open image: Serenity Spa Interior">
+        <img src="images/project_interior.png" alt="Serenity Spa interior" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Serenity Spa — Bathing Hall</div>
+          <div class="masonry-cat">Interior · Wellness</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="exterior" data-src="images/project_landscape.png" tabindex="0" role="button" aria-label="Open image: Green Valley Exterior">
+        <img src="images/project_landscape.png" alt="Green Valley exterior view" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Green Valley Residences</div>
+          <div class="masonry-cat">Exterior · Residential</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="render" data-src="images/concept_render.png" tabindex="0" role="button" aria-label="Open image: Night Render">
+        <img src="images/concept_render.png" alt="Night time architectural render" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">International BD — Night Vision</div>
+          <div class="masonry-cat">3D Render · Urban</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="urban" data-src="images/project_urban.png" tabindex="0" role="button" aria-label="Open image: Urban Plaza">
+        <img src="images/project_urban.png" alt="Urban public plaza" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">Cultural Arts Complex — Plaza</div>
+          <div class="masonry-cat">Urban · Cultural</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+      <div class="masonry-item" data-gcat="landscape" data-src="images/project_landscape.png" tabindex="0" role="button" aria-label="Open image: River Promenade Landscape">
+        <img src="images/project_landscape.png" alt="River front promenade landscape" loading="lazy" />
+        <div class="masonry-hover">
+          <div class="masonry-title">River Front Promenade</div>
+          <div class="masonry-cat">Landscape · Urban</div>
+        </div>
+        <div class="masonry-icon"><i class="fas fa-expand-alt"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section class="ba-section section" id="before-after">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Transformation Stories</div>
+        <h2 class="section-title">Before &amp; <em>After</em></h2>
+        <p class="section-subtitle">Drag the slider to explore the dramatic transformation of NexGen Corporate Headquarters — from a tired 1980s office block to a biophilic contemporary workplace</p>
+      </div>
+      <div class="ba-wrapper" id="baWrapper" data-aos="fade-up">
+        <div class="ba-before-img">
+          <img src="images/about_architect.png" alt="Before renovation — old office building" id="baBeforeImg" draggable="false" />
+        </div>
+        <div class="ba-after-img" id="baAfterArea">
+          <img src="images/project_interior.png" alt="After renovation — NexGen HQ interior" id="baAfterImg" draggable="false" />
+        </div>
+        <div class="ba-slider-line" id="baLine"></div>
+        <div class="ba-handle" id="baHandle" aria-label="Drag to compare">
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="ba-label-before">Before</div>
+        <div class="ba-label-after">After</div>
+      </div>
+      <p style="text-align:center; font-size:0.82rem; color:var(--text-secondary); margin-top:1.5rem;">
+        <i class="fas fa-arrows-left-right" style="color:var(--accent); margin-right:0.4rem;"></i>
+        Drag the handle left or right to reveal the transformation
+      </p>
+    </div>
+  </section>
+
+  <!-- VIDEO WALKTHROUGH -->
+  <section class="video-section section" id="video">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-wrap" data-aos="fade-right" id="videoWrap">
+          <img class="video-thumb" src="images/project_villa.png" alt="Skyline Villa video walkthrough thumbnail" />
+          <div class="video-overlay">
+            <div class="play-btn-circle"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+        <div class="video-content" data-aos="fade-left">
+          <div class="section-tag">Video Tour</div>
+          <h2>Virtual Walkthrough of <em>Skyline Villa</em></h2>
+          <p>Step inside our award-winning Skyline Villa through a fully immersive 4K video walkthrough — a cinematic journey through every space, every material, and every view that makes this home extraordinary.</p>
+          <p>Our studio produces professional video walkthroughs for all major projects, offering clients, press, and future buyers an unparalleled sense of space before ever setting foot inside.</p>
+          <ul class="video-feature-list">
+            <li class="video-feature-item"><i class="fas fa-check-circle"></i> Professionally produced in 4K HDR</li>
+            <li class="video-feature-item"><i class="fas fa-check-circle"></i> Full narrated cinematic walk</li>
+            <li class="video-feature-item"><i class="fas fa-check-circle"></i> Interior, exterior, and landscape coverage</li>
+            <li class="video-feature-item"><i class="fas fa-check-circle"></i> Drone aerial footage included</li>
+          </ul>
+          <a href="index.html#contact" class="btn btn-primary">Request a Walkthrough <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE STRIP -->
+  <section style="background:var(--bg-secondary); padding:5rem 0; text-align:center;">
+    <div class="container">
+      <div data-aos="fade-up" style="max-width:780px; margin:0 auto;">
+        <div style="font-size:3rem; color:var(--accent); opacity:0.3; margin-bottom:0.5rem;"><i class="fas fa-quote-left"></i></div>
+        <blockquote style="font-family:var(--font-heading); font-size:clamp(1.25rem, 2.5vw, 1.65rem); font-style:italic; color:var(--text); line-height:1.65; margin-bottom:1.75rem;">
+          "An architect is the painter of life. At HM Architect, we don't just design buildings — we design the experience of being alive inside them. Every space is an invitation to feel, to breathe, to belong."
+        </blockquote>
+        <div style="display:flex; align-items:center; justify-content:center; gap:1rem;">
+          <div style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-dark)); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-heading); font-weight:700;">HM</div>
+          <div style="text-align:left;">
+            <div style="font-weight:600; color:var(--text); font-size:0.95rem;">Harsh Mehta</div>
+            <div style="font-size:0.78rem; color:var(--text-secondary);">Founder &amp; Principal Architect, HM Architect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg"><img src="images/about_hero_bg.png" alt="" /><div class="cta-overlay"></div></div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="section-tag light">Your Turn</div>
+        <h2>Let Your Project<br />Be the Next <em>Story</em></h2>
+        <p>Every project in our gallery started with a single conversation. Start yours today — complimentary consultation available.</p>
+        <a href="index.html#contact" class="btn btn-gold btn-lg">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main"><div class="container"><div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">HM</span><span class="logo-text">Architect</span></a>
+        <p>Creating timeless spaces that inspire, innovate, and endure. Architecture that stands for generations.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="index.html#contact">Contact</a></li>
+      </ul></div>
+      <div class="footer-links"><h4>Gallery</h4><ul>
+        <li><a href="#masonry-gallery">Exterior Photography</a></li>
+        <li><a href="#masonry-gallery">Interior Design</a></li>
+        <li><a href="#masonry-gallery">Urban Projects</a></li>
+        <li><a href="#masonry-gallery">Landscape</a></li>
+        <li><a href="#masonry-gallery">3D Renders</a></li>
+        <li><a href="#before-after">Before &amp; After</a></li>
+      </ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>HM Architect Studio, Satellite Road,<br>Ahmedabad, Gujarat 380015, India</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919876543210">+91 98765 43210</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:hello@hmarchitect.com">hello@hmarchitect.com</a></span></div>
+      </div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container">
+      <p>&copy; <span id="currentYear">2025</span> HM Architect. All Rights Reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

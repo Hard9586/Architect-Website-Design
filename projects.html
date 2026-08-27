@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | HM Architect — Past, Ongoing & Future Projects</title>
+  <meta name="description"
+    content="Explore HM Architect's full portfolio of completed, ongoing, and upcoming architectural projects across residential, commercial, urban, and landscape typologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode"><i
+      class="fas fa-moon"></i></button>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">HM</span><span class="logo-text">Architect</span></a>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+        <li><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+        <li><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+        <li><a href="projects.html" class="nav-link active" role="menuitem">Projects</a></li>
+        <li><a href="gallery.html" class="nav-link" role="menuitem">Gallery</a></li>
+        <li><a href="index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Get Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" id="projects-hero">
+    <div class="page-hero-bg">
+      <img src="images/project_urban.png" alt="" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Projects</span>
+        </nav>
+        <h1>A Portfolio of <em>Excellence</em></h1>
+        <p class="page-hero-sub">From intimate bespoke residences to sweeping urban master plans — over a decade of
+          landmark projects that have shaped skylines, enriched communities, and redefined expectations.</p>
+        <div class="projects-hero-stats">
+          <div class="projects-hero-stat"><span>200+</span><span>Completed Projects</span></div>
+          <div class="projects-hero-stat"><span>8</span><span>States Served</span></div>
+          <div class="projects-hero-stat"><span>15+</span><span>Awards Won</span></div>
+          <div class="projects-hero-stat"><span>3</span><span>International</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABS SECTION -->
+  <section class="section" id="portfolio" style="background:var(--bg);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Our Portfolio</div>
+        <h2 class="section-title">Every Project, Every <em>Stage</em></h2>
+        <p class="section-subtitle">Browse our full portfolio — completed landmarks, exciting works-in-progress, and
+          visionary projects on the horizon</p>
+      </div>
+
+      <div class="tabs-wrapper" data-aos="fade-up">
+        <div class="project-tab-nav" role="tablist">
+          <button class="tab-btn active" data-tab="past" role="tab" aria-selected="true"><i
+              class="fas fa-check-circle"></i> Past Projects</button>
+          <button class="tab-btn" data-tab="ongoing" role="tab" aria-selected="false"><i class="fas fa-hard-hat"></i>
+            Ongoing Projects</button>
+          <button class="tab-btn" data-tab="future" role="tab" aria-selected="false"><i class="fas fa-rocket"></i>
+            Future Projects</button>
+        </div>
+
+        <!-- PAST PROJECTS -->
+        <div class="tab-pane active" id="past-tab" role="tabpanel">
+          <div class="past-projects-grid">
+            <!-- Card 1 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_villa.png" alt="Skyline Villa" />
+                <span class="proj-cat-badge cat-res">Residential</span>
+                <div class="award-ribbon"><i class="fas fa-trophy"></i></div>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2015 · Award-Winning</div>
+                <h3>Skyline Villa</h3>
+                <p>A sculptural hilltop residence in Ahmedabad that weaves exposed concrete, teak timber, and infinity
+                  pool into a seamless architectural narrative. Winner of the Gujarat Regional Design Award.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, GJ</span>
+                  <span><i class="fas fa-ruler-combined"></i> 6,500 sq ft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_office.png" alt="Central Business Tower" />
+                <span class="proj-cat-badge cat-com">Commercial</span>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2017</div>
+                <h3>Central Business Tower</h3>
+                <p>A 22-storey Grade-A office tower in Mumbai's BKC precinct featuring a double-skin ETFE facade, sky
+                  gardens, and LEED Gold certified MEP systems. One of our most technically complex projects.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Mumbai, MH</span>
+                  <span><i class="fas fa-ruler-combined"></i> 1.8 lakh sq ft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_interior.png" alt="Zen Interior - Corporate HQ" />
+                <span class="proj-cat-badge cat-int">Interior</span>
+                <div class="award-ribbon"><i class="fas fa-trophy"></i></div>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2022 · Award-Winning</div>
+                <h3>NexGen Corporate Headquarters</h3>
+                <p>An 80,000 sq ft biophilic corporate interior in Bengaluru — suspended gardens, material palettes of
+                  stone, copper, and ash timber, and activity-based workplaces that truly inspire innovation.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Bengaluru, KA</span>
+                  <span><i class="fas fa-ruler-combined"></i> 80,000 sq ft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_landscape.png" alt="River Front Promenade" />
+                <span class="proj-cat-badge cat-urb">Urban</span>
+                <div class="award-ribbon"><i class="fas fa-trophy"></i></div>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2020 · Award-Winning</div>
+                <h3>Surat River Front Promenade</h3>
+                <p>A transformative 4.2 km public waterfront precinct featuring amphitheatres, pedestrian plazas, urban
+                  gardens, and cafés that have become the social heart of the city.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Surat, GJ</span>
+                  <span><i class="fas fa-ruler-combined"></i> 4.2 km stretch</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_villa.png" alt="Green Valley Residences" />
+                <span class="proj-cat-badge cat-res">Residential</span>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2018</div>
+                <h3>Green Valley Residences</h3>
+                <p>A 240-unit sustainable residential township in Surat designed to net-zero energy standards,
+                  incorporating solar roofs, rainwater harvesting, and a 3-acre central park.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Surat, GJ</span>
+                  <span><i class="fas fa-ruler-combined"></i> 240 units · 12 acres</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_urban.png" alt="Apex Corporate Park" />
+                <span class="proj-cat-badge cat-com">Commercial</span>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2021</div>
+                <h3>Apex Corporate Park</h3>
+                <p>A three-building corporate campus in Pune's Hinjawadi IT corridor featuring shared amenities, sky
+                  bridges, EV charging infrastructure, and a rooftop observatory.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Pune, MH</span>
+                  <span><i class="fas fa-ruler-combined"></i> 4.5 lakh sq ft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/about_architect.png" alt="Serenity Spa & Wellness" />
+                <span class="proj-cat-badge cat-hos">Hospitality</span>
+                <div class="award-ribbon"><i class="fas fa-trophy"></i></div>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2022 · Award-Winning</div>
+                <h3>Serenity Spa &amp; Wellness Centre</h3>
+                <p>A 25,000 sq ft luxury wellness retreat where architecture becomes therapy — cave-like stone bathing
+                  chambers, lush private courtyards, and therapeutic water pavilions.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Bengaluru, KA</span>
+                  <span><i class="fas fa-ruler-combined"></i> 25,000 sq ft</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_office.png" alt="Knowledge City Campus" />
+                <span class="proj-cat-badge cat-edu">Educational</span>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2023</div>
+                <h3>Knowledge City Campus</h3>
+                <p>A 28-acre university campus master plan in Ahmedabad that reimagines academic architecture —
+                  interactive learning streets, maker spaces, and a 1,000-seat auditorium.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, GJ</span>
+                  <span><i class="fas fa-ruler-combined"></i> 28 acres</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="past-project-card">
+              <div class="past-proj-img">
+                <img src="images/project_landscape.png" alt="Metropolitan Hotel" />
+                <span class="proj-cat-badge cat-hos">Hospitality</span>
+              </div>
+              <div class="past-proj-info">
+                <div class="proj-year">2019</div>
+                <h3>The Metropolitan Hotel</h3>
+                <p>A 185-room luxury business hotel in the heart of Ahmedabad with a rooftop infinity pool, three dining
+                  venues, and a column-free 2,000-person grand ballroom.</p>
+                <div class="proj-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, GJ</span>
+                  <span><i class="fas fa-ruler-combined"></i> 185 keys · 3.2 lakh sq ft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGOING PROJECTS -->
+        <div class="tab-pane" id="ongoing-tab" role="tabpanel">
+          <div class="ongoing-grid">
+            <div class="ongoing-card">
+              <div class="ongoing-img"><img src="images/project_villa.png" alt="Lakewood Luxury Villas" /></div>
+              <div class="ongoing-body">
+                <div class="ongoing-head">
+                  <h3>Lakewood Luxury Villas</h3>
+                  <span class="status-chip s-active">Active</span>
+                </div>
+                <div class="ongoing-desc">A gated community of 36 ultra-luxury standalone villas along the Chandola Lake
+                  in Gandhinagar. Each villa features a private pool, home theatre, and staff quarters within a 20-acre
+                  palm-lined estate.</div>
+                <div class="progress-wrap">
+                  <div class="progress-top"><span>Construction Progress</span><span class="progress-pct">65%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="65"></div>
+                  </div>
+                </div>
+                <div class="ongoing-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Gandhinagar, GJ</span>
+                  <span><i class="fas fa-calendar-alt"></i> Est. Completion: Q1 2026</span>
+                  <span><i class="fas fa-ruler-combined"></i> 36 villas · 20 acres</span>
+                </div>
+              </div>
+            </div>
+            <div class="ongoing-card">
+              <div class="ongoing-img"><img src="images/construction_site.png" alt="Tech Park Tower" /></div>
+              <div class="ongoing-body">
+                <div class="ongoing-head">
+                  <h3>TechSphere Park Tower</h3>
+                  <span class="status-chip s-active">Active</span>
+                </div>
+                <div class="ongoing-desc">A 32-storey LEED Platinum-targeted tech park tower in Bengaluru's Whitefield
+                  corridor featuring a diagrid steel exoskeleton, sky gardens every 8 floors, and a rooftop helipad.
+                </div>
+                <div class="progress-wrap">
+                  <div class="progress-top"><span>Construction Progress</span><span class="progress-pct">40%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="40"></div>
+                  </div>
+                </div>
+                <div class="ongoing-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Bengaluru, KA</span>
+                  <span><i class="fas fa-calendar-alt"></i> Est. Completion: Q3 2026</span>
+                  <span><i class="fas fa-ruler-combined"></i> 6.5 lakh sq ft</span>
+                </div>
+              </div>
+            </div>
+            <div class="ongoing-card">
+              <div class="ongoing-img"><img src="images/project_urban.png" alt="Cultural Arts Complex" /></div>
+              <div class="ongoing-body">
+                <div class="ongoing-head">
+                  <h3>Ahmedabad Cultural Arts Complex</h3>
+                  <span class="status-chip s-active">Active</span>
+                </div>
+                <div class="ongoing-desc">A multi-venue cultural hub housing a 1,200-seat concert hall, contemporary art
+                  museum, open-air amphitheatre, and artisan market — a new cultural anchor for the city.</div>
+                <div class="progress-wrap">
+                  <div class="progress-top"><span>Construction Progress</span><span class="progress-pct">75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="75"></div>
+                  </div>
+                </div>
+                <div class="ongoing-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Ahmedabad, GJ</span>
+                  <span><i class="fas fa-calendar-alt"></i> Est. Completion: Q4 2025</span>
+                  <span><i class="fas fa-ruler-combined"></i> 4.5 lakh sq ft</span>
+                </div>
+              </div>
+            </div>
+            <div class="ongoing-card">
+              <div class="ongoing-img"><img src="images/project_landscape.png" alt="Coastal Resort Goa" /></div>
+              <div class="ongoing-body">
+                <div class="ongoing-head">
+                  <h3>Coastal Retreat Resort, Goa</h3>
+                  <span class="status-chip s-design">Design Stage</span>
+                </div>
+                <div class="ongoing-desc">A 120-villa eco-sensitive beach resort on Goa's southern coastline, designed
+                  to embed within the existing coconut grove with minimal site impact and maximum immersion in the
+                  coastal landscape.</div>
+                <div class="progress-wrap">
+                  <div class="progress-top"><span>Overall Progress</span><span class="progress-pct">22%</span></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="22"></div>
+                  </div>
+                </div>
+                <div class="ongoing-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> South Goa, GA</span>
+                  <span><i class="fas fa-calendar-alt"></i> Est. Completion: Q2 2027</span>
+                  <span><i class="fas fa-ruler-combined"></i> 120 villas · 32 acres</span>
+                </div>
+              </div>
+            </div>
+            <div class="ongoing-card">
+              <div class="ongoing-img"><img src="images/about_architect.png" alt="Township Rajkot" /></div>
+              <div class="ongoing-body">
+                <div class="ongoing-head">
+                  <h3>Rajkot Smart Township</h3>
+                  <span class="status-chip s-planning">Planning</span>
+                </div>
+                <div class="ongoing-desc">A 500-acre integrated smart township master plan for Rajkot featuring 5,000
+                  mixed-tenure homes, a commercial district, schools, healthcare, and a 30-acre urban forest at its
+                  green heart.</div>
+                <div class="progress-wrap">
+                  <div class="progress-top"><span>Overall Progress</span><span class="progress-pct">15%</span></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-progress="15"></div>
+                  </div>
+                </div>
+                <div class="ongoing-meta-row">
+                  <span><i class="fas fa-map-marker-alt"></i> Rajkot, GJ</span>
+                  <span><i class="fas fa-calendar-alt"></i> Est. Completion: Q4 2028</span>
+                  <span><i class="fas fa-ruler-combined"></i> 500 acres</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FUTURE PROJECTS -->
+        <div class="tab-pane" id="future-tab" role="tabpanel">
+          <div style="text-align:center; margin-bottom:2.5rem;" data-aos="fade-up">
+            <div class="section-tag" style="display:inline-block; margin:0 auto 1rem;">Upcoming &amp; Conceptual</div>
+            <p style="max-width:580px; margin:0 auto; color:var(--text-secondary); font-size:0.95rem; line-height:1.8;">
+              These projects represent the leading edge of our design thinking — commissions secured and concepts under
+              development for the near future. Bold, ambitious, and unlike anything built before.</p>
+          </div>
+          <div class="future-grid">
+            <div class="future-card" data-aos="fade-up" data-delay="0">
+              <div class="future-img">
+                <img src="images/concept_render.png" alt="Vertical Forest Towers Mumbai" />
+                <div class="future-tag">Concept — 2026–2028</div>
+              </div>
+              <div class="future-body">
+                <h3>Vertical Forest Towers, Mumbai</h3>
+                <p>Two intertwined residential towers in Mumbai's Lower Parel, wrapped in 28,000 plants across stepped
+                  terraces — a breathable, living architectural landmark that breathes with the city.</p>
+                <div class="future-specs">
+                  <div class="spec-item"><span class="spec-label">Typology</span><span class="spec-value">Residential
+                      Towers</span></div>
+                  <div class="spec-item"><span class="spec-label">Height</span><span class="spec-value">48 &amp; 52
+                      Storeys</span></div>
+                  <div class="spec-item"><span class="spec-label">Location</span><span class="spec-value">Mumbai,
+                      MH</span></div>
+                  <div class="spec-item"><span class="spec-label">Est. Completion</span><span class="spec-value">Q2
+                      2028</span></div>
+                </div>
+                <a href="index.html#contact" class="btn btn-primary"
+                  style="font-size:0.82rem; padding:0.65rem 1.4rem;">Express Interest <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="future-card" data-aos="fade-up" data-delay="100">
+              <div class="future-img">
+                <img src="images/project_urban.png" alt="Smart City Hub Ahmedabad" />
+                <div class="future-tag">Planned — 2026–2027</div>
+              </div>
+              <div class="future-body">
+                <h3>Smart City Innovation Hub</h3>
+                <p>A government-commissioned technology and innovation campus in Ahmedabad's GIFT City — designed as a
+                  catalyst for the next generation of Indian entrepreneurs, researchers, and technologists.</p>
+                <div class="future-specs">
+                  <div class="spec-item"><span class="spec-label">Typology</span><span class="spec-value">Mixed-Use
+                      Campus</span></div>
+                  <div class="spec-item"><span class="spec-label">Scale</span><span class="spec-value">18 lakh sq
+                      ft</span></div>
+                  <div class="spec-item"><span class="spec-label">Location</span><span class="spec-value">GIFT City,
+                      GJ</span></div>
+                  <div class="spec-item"><span class="spec-label">Est. Completion</span><span class="spec-value">Q3
+                      2027</span></div>
+                </div>
+                <a href="index.html#contact" class="btn btn-primary"
+                  style="font-size:0.82rem; padding:0.65rem 1.4rem;">Express Interest <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="future-card" data-aos="fade-up" data-delay="200">
+              <div class="future-img">
+                <img src="images/project_office.png" alt="International Business District Surat" />
+                <div class="future-tag">Concept — 2027–2030</div>
+              </div>
+              <div class="future-body">
+                <h3>International Business District</h3>
+                <p>A visionary 1,200-acre international business district masterplan for Surat — including a CBD,
+                  transit hub, waterfront promenade, diplomatic enclave, and a net-zero energy supply ring.</p>
+                <div class="future-specs">
+                  <div class="spec-item"><span class="spec-label">Typology</span><span class="spec-value">Urban Master
+                      Plan</span></div>
+                  <div class="spec-item"><span class="spec-label">Scale</span><span class="spec-value">1,200
+                      acres</span></div>
+                  <div class="spec-item"><span class="spec-label">Location</span><span class="spec-value">Surat,
+                      GJ</span></div>
+                  <div class="spec-item"><span class="spec-label">Est. Completion</span><span class="spec-value">Phase
+                      1: 2030</span></div>
+                </div>
+                <a href="index.html#contact" class="btn btn-primary"
+                  style="font-size:0.82rem; padding:0.65rem 1.4rem;">Express Interest <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SPOTLIGHT -->
+  <section class="featured-spotlight" id="featured">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Project Spotlight</div>
+        <h2 class="section-title">Featured <em>Project</em></h2>
+      </div>
+      <div class="featured-project-card" data-aos="fade-up">
+        <div class="featured-proj-img">
+          <img src="images/project_villa.png" alt="Skyline Villa — Featured Project" />
+        </div>
+        <div class="featured-proj-content">
+          <div class="section-tag">Award Winner · 2015</div>
+          <h2>Skyline Villa, Ahmedabad</h2>
+          <p>Our first residential landmark remains among our most celebrated. Skyline Villa is a sculptural 6,500 sq ft
+            home perched on Ahmedabad's western ridge, designed to frame the Arabian Sea horizon at every turn. The
+            design synthesizes exposed board-formed concrete, locally quarried Kota limestone, and hand-selected teak
+            timber into a composition that feels simultaneously monumental and intimately human.</p>
+          <p>The project won the Gujarat Regional Design Award and has been featured in Architectural Digest India,
+            Vogue Living, and six international design publications. It remains a pilgrimage site for architecture
+            students from across the country.</p>
+          <div class="proj-kpis">
+            <div class="kpi-item"><span class="kpi-num">6,500</span><span class="kpi-label">Square Feet</span></div>
+            <div class="kpi-item"><span class="kpi-num">18</span><span class="kpi-label">Months Build</span></div>
+            <div class="kpi-item"><span class="kpi-num">6</span><span class="kpi-label">Publications</span></div>
+          </div>
+          <a href="index.html#contact" class="btn btn-gold">Start Your Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="mega-stats-section" id="project-stats">
+    <div class="container">
+      <div class="mega-stats-grid">
+        <div class="mega-stat-item">
+          <i class="fas fa-home mega-icon"></i>
+          <span class="mega-num" data-target="82">0</span><span class="mega-num mega-suffix">+</span>
+          <span class="mega-label">Residential Projects</span>
+        </div>
+        <div class="mega-stat-item">
+          <i class="fas fa-building mega-icon"></i>
+          <span class="mega-num" data-target="58">0</span><span class="mega-num mega-suffix">+</span>
+          <span class="mega-label">Commercial Projects</span>
+        </div>
+        <div class="mega-stat-item">
+          <i class="fas fa-couch mega-icon"></i>
+          <span class="mega-num" data-target="45">0</span><span class="mega-num mega-suffix">+</span>
+          <span class="mega-label">Interior Projects</span>
+        </div>
+        <div class="mega-stat-item">
+          <i class="fas fa-city mega-icon"></i>
+          <span class="mega-num" data-target="12">0</span><span class="mega-num mega-suffix">+</span>
+          <span class="mega-label">Urban Plans</span>
+        </div>
+        <div class="mega-stat-item">
+          <i class="fas fa-tree mega-icon"></i>
+          <span class="mega-num" data-target="24">0</span><span class="mega-num mega-suffix">+</span>
+          <span class="mega-label">Landscape Projects</span>
+        </div>
+        <div class="mega-stat-item">
+          <i class="fas fa-globe mega-icon"></i>
+          <span class="mega-num" data-target="3">0</span><span class="mega-num mega-suffix"></span>
+          <span class="mega-label">International Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg"><img src="images/construction_site.png" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="section-tag light">Start Now</div>
+        <h2>Let Us Build Your<br /><em>Next Legacy</em></h2>
+        <p>Whether it's a home, a commercial tower, or a master plan — your project starts with a single conversation.
+          Let's talk.</p>
+        <a href="index.html#contact" class="btn btn-gold btn-lg">Begin Your Project <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo"><span class="logo-icon">HM</span><span
+                class="logo-text">Architect</span></a>
+            <p>Creating timeless spaces that inspire, innovate, and endure. Architecture that stands for generations.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#arch-design">Architectural Design</a></li>
+              <li><a href="services.html#interior">Interior Design</a></li>
+              <li><a href="services.html#urban">Urban Planning</a></li>
+              <li><a href="services.html#landscape">Landscape Design</a></li>
+              <li><a href="services.html#visualization">3D Visualization</a></li>
+              <li><a href="services.html#pm">Project Management</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>HM Architect Studio, Satellite
+                Road,<br>Ahmedabad, Gujarat 380015, India</span></div>
+            <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919876543210">+91 98765
+                  43210</a></span></div>
+            <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a
+                  href="mailto:hello@hmarchitect.com">hello@hmarchitect.com</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear">2025</span> HM Architect. All Rights Reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+
+</html>
